@@ -17,18 +17,8 @@ var pessoas = [
 	{ nome: 'Carlos', altura: 1.9, peso: 100 },
 ];
 
-const pessoasIMC = [];
-
 pessoas.forEach(pessoa => {
-	let pessoaObj = {
-		nome: '',
-		IMC: 0,
-	};
-
-	pessoaObj.nome = pessoa.nome;
-	pessoaObj.IMC = parseInt(calcIMC(pessoa.peso, pessoa.altura));
-
-	pessoasIMC.push(pessoaObj);
+	pessoa.IMC = parseInt(calcIMC(pessoa.peso, pessoa.altura));
 });
 
 function calcIMC(peso, altura) {
@@ -36,4 +26,3 @@ function calcIMC(peso, altura) {
 }
 
 console.log(pessoas);
-console.log(pessoasIMC);

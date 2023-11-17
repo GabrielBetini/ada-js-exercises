@@ -70,7 +70,7 @@ console.log(`Frutas (${frutas.length}): ${showList(frutas)} `);
 console.log(`Legumes (${legumes.length}): ${showList(legumes)} `);
 console.log(`Verduras (${verduras.length}): ${showList(verduras)} `);
 
-//Funcao para imprimir os elementos da lista com um espaçamento
+//Funcao para imprimir os elementos da lista com espaçamento
 function showList(list) {
 	let str = '';
 	for (let i = 0; i <= list.length; i++) {
